@@ -1,0 +1,180 @@
+*{
+    box-sizing: border-box;
+    font-family: sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+html, body{
+    width: 100%;
+    height: 100%;
+
+}
+
+.main{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.nav{
+    height: 80px;
+    width: 100%;
+    /* background: red; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 4vw;
+    border-bottom: 2px solid rgba(155, 155, 155, 0.1);
+}
+
+.nav img{
+    width: 8vw;
+}
+
+.nav .img-wt{
+    display: none;
+}
+
+.nav h2{
+    font-size: 2vw;
+    font-weight: 700;
+}
+.nav-pt2{
+    display: flex;
+    /* background-color: yellow; */
+    align-items: center;
+    gap: 4vw;
+    
+}
+
+.nav h4{
+    font-size: 1vw;
+}
+
+.nav i{
+    font-size: 1.6;
+    font-weight: 800;
+    display: none;
+}
+
+.content{
+    height: calc(100% - 80px);
+    width: 100%;
+    display: flex;
+    position: relative;
+}
+
+.left{
+    height: 100%;
+    width: 70%;
+    padding: 5vw 4vw;
+}
+
+.left h1{
+    font-size: 4.2vw;
+    line-height: 4.4vw;
+}
+
+.left h1 span{
+    color: lightseagreen;
+}
+
+.left p{
+    width: 80%;
+    font-size: 1.2vw;
+    color: #666;
+    font-weight: 600;
+    margin-top: 1.5vw;
+    margin-bottom: 3vw;
+}
+
+#buttons{
+    display: flex;
+    justify-content: space-around;
+}
+
+button{
+    font-size: 1.2vw;
+    padding: 1vw 2vw;
+    background: lightseagreen;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+
+button:hover{
+    background: green;
+}
+
+.right{
+    height: 90%;
+    width: 30%;
+    padding: 1.5vw;
+   
+}
+
+.right img{
+    width: 25vw;
+    height: 100%;
+    border-radius: 5%;
+}
+
+
+.card{
+    width: 22%;
+    height: fit-content;
+    margin: auto;
+    background: white;
+    padding: 2vw;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    display: flex; 
+    justify-content: space-around;
+    margin: 10px;
+    gap: 2vw;
+    overflow-wrap:break-word;
+
+}
+
+.about-card, .edu-card, .skill-card, .exp-card{
+    display: none;
+}
+
+.card p{
+    font-size: 12px;
+}
+
+.card ul{
+    list-style: inside;
+}
+
+.card ul li {
+    font-size: 14px;
+}
+
+.cards-section{
+    display: flex;
+    padding: 25px;
+}
+
+/* Mobile phones */
+
+
+
+ /* Tablets*/
+
+
+
+
+
+/* Small Desktops */
+
+
+
+/* Laptops and desktops */
+
+

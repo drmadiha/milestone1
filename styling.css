@@ -1,0 +1,306 @@
+/* Reset some default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: gainsboro;
+}
+
+/* Main container */
+.main {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Navigation */
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: rgb(36, 36, 179);
+    color: #fff;
+}
+
+.nav img {
+    height: 50px;
+}
+
+.nav .img-wt {
+    display: none;
+}
+
+.nav a{
+    color:rgb(36, 36, 179) ;
+    background-color: white;
+    border: none;
+    padding: 10px;
+    font-size: 15px;
+    transition: all 0.4s ease-in;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav a:hover{
+    color: white;
+    background-color: green;
+}
+
+
+
+.nav h4, .nav button {
+    color: #fff;
+    cursor: pointer;
+    margin: 0 15px;
+}
+
+/* Main content */
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.left {
+    flex: 1;
+    padding: 20px;
+}
+
+.left h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.left h1 span {
+    color: #333;
+    font-weight: bold;
+}
+
+.left p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+}
+
+#buttons {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+#buttons .btn {
+    padding: 10px 20px;
+    border: none;
+    background-color: rgb(36, 36, 179);
+    color: white;
+    cursor: pointer;
+    border-radius: 3px;
+    transition: all 0.2s ease;
+}
+
+#buttons .btn:hover {
+    background-color: green;
+}
+
+/* Card Section */
+.cards-section {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+.card {
+    background-color: rgb(36, 36, 179);
+    color: white;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    display: none;
+}
+
+.card h3 {
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+    color: gold;
+}
+
+.card ul {
+    list-style-type: none;
+}
+
+.card ul li h4, .card ul li h3 {
+    margin-bottom: 5px;
+    font-size: 1.2rem;
+}
+
+/* Right Section */
+.right {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.right img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 5%;
+    
+}
+
+
+/* Form Container */
+.form-container {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.form-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2rem;
+    color: #333;
+}
+
+/* Form Group */
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+.form-group input, .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+/* Submit Button */
+.btn.submit-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.btn.submit-btn:hover {
+    background-color: #555;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .form-container {
+        padding: 15px;
+    }
+
+    .form-container h2 {
+        font-size: 1.8rem;
+    }
+
+    .form-group input, .form-group textarea {
+        font-size: 0.9rem;
+    }
+
+    .btn.submit-btn {
+        padding: 8px;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .form-container h2 {
+        font-size: 1.5rem;
+    }
+
+    .btn.submit-btn {
+        padding: 6px;
+        font-size: 0.8rem;
+    }
+}
+
+
+
+/* Media Queries for responsiveness */
+@media (max-width: 768px) {
+    .content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav img {
+        height: 40px;
+    }
+
+    .nav .img-wt {
+        display: block;
+    }
+
+    .right img {
+        width: 80%;
+        max-width: 300px;
+    }
+
+    .left h1 {
+        font-size: 1.8rem;
+    }
+
+    .cards-section {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .nav {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .nav img {
+        height: 30px;
+    }
+
+    .left h1 {
+        font-size: 1.5rem;
+    }
+
+    .left p {
+        font-size: 1rem;
+    }
+
+    #buttons {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .right img {
+        width: 70%;
+        max-width: 250px;
+    }
+}
